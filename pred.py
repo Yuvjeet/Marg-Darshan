@@ -134,7 +134,7 @@ def model(data = None):
         prediction = {
             "Decision Tree" : decode_job[dt.predict(inp)[0]], 
             "Random Forest" : decode_job[rf.predict(inp)[0]], 
-            "Gradient Boosting" : decode_job[gb.predict(inp)[0]], 
+            # "Gradient Boosting" : decode_job[gb.predict(inp)[0]], 
             "Linear Regression" :  decode_job[lr.predict(inp)[0]], 
             "KNN" : decode_job[knn.predict(inp)[0]],
             "Support Vector Machine" : decode_job[svc.predict(inp)[0]]
