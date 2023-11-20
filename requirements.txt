@@ -1,8 +1,8 @@
-Flask == 2.2.2
+Flask 
 pandas
 numpy 
-scikit-learn == 1.2.1
-joblib == 1.1.1
-scipy == 1.10.0
+scikit-learn 
+joblib 
+scipy 
 threadpoolctl 
 Gunicorn
