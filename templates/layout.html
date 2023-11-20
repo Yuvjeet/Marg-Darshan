@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/main.css') }}">
+    <script src="{{ url_for('static', filename='JS/app.js') }}" defer></script>
+    <link rel="icon" type="image/png" href="{{url_for('static', filename = 'Img/Marg_darshan.png')}}">
+    <title>Marg Darshan</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar blue">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link tblack font">Home</a></li>
+                <li class="nav-item"><a href="#main" class="nav-link tblack font" onclick="smoothScroll('#main')">Try Now</a></li>
+                <li class="nav-item"><a href="#footer" class="nav-link tblack font" onclick="smoothScroll('#footer')">About us</a></li>
+                <li class="nav-item"><a href="#footer" class="nav-link tblack font" onclick="smoothScroll('#footer')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="banner blue">
+        <div class="holder">
+            <div class="left">
+                <h1 class="slogan">"Navigate Your Future With</h1><h1 class="name"> Marg Darshan"</h1>
+                <div class="button"><a href="#main" onclick="smoothScroll('#main')">Try Now</a></div>
+            </div>
+            <div class="right">
+                <img src="{{ url_for('static', filename='Img/img1.png')}}" alt='sidepic'/>
+            </div>
+            
+        </div>
+    </section>
+    <div class="clear"></div>
+    <section class="seprator">
+        <div class='divider'>
+            <div class="job-profile">
+                <img src="{{ url_for('static', filename='Img/software-engineer.png')}}" alt="engineer" class="SE"/>
+                <h1>Software</h1><h1>Engineer</h1>
+            </div>
+            <div class="job-profile">
+                <img src="{{ url_for('static', filename='Img/management.png')}}" alt="scientist" />
+                <h1>Data</h1><h1>Scientist</h1>
+            </div>
+            <div class="job-profile">
+                <img src="{{ url_for('static', filename='Img/Rectangle.png')}}" alt="engineer" />
+                <h1>Cloud</h1><h1>Engineer</h1>
+            </div>
+            <div class="job-profile">
+                <img src="{{ url_for('static', filename='Img/admin.png')}}" alt="engineer" />
+                <h1>Network</h1><h1>Administrator</h1>
+            </div>
+        </div>
+    </section>
+    <section class="manual" id = "help">
+        <h1 class="mid">How to use it?</h1>
+        <div class='instruction'>
+            <div class='input feed'>
+                <div class="blue"><img src="{{ url_for('static', filename='Img/FeedIn.png')}}" alt="Feedin" /></div>
+                <h1>Feed In</h1>
+                <p>“provide your academic performance data, including marks for various subjects, to facilitate accurate predictive analysis.”</p>
+            </div>
+
+            <div class='input processing'>
+                <div class="blue"><img src="{{ url_for('static', filename='Img/Processing.png')}}" alt="processing" /></div>
+                <h1>Processing</h1>
+                <p>“Kindly await the completion of our model's comprehensive analysis to determine the most suitable career opportunity for you.”</p>
+            </div>
+
+            <div class='input result'>
+                <div class="blue"><img src="{{ url_for('static', filename='Img/Result.png')}}" alt="result" style="height: 25rem;" class="rimg"></div>
+                <h1>Result</h1>
+                <p>“Our system has identified the optimal career opportunity for you based on our predictive analysis of your academic performance”</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="main" id = "main">
+        <div class="container">
+            <div class="input-box">
+                <input type="number" name="DS" id="DS" required>
+                <span class="DS">Data Structure</span>
+            </div>
+            <div class="input-box">
+                <input type="number" name="OS" id="OS" required>
+                <span>Operating System</span>
+            </div>
+            <div class="input-box">
+                <input type="number" name="CN" id="CN" required>
+                <span>Computer Network</span>
+            </div>
+            <div class="input-box">
+                <input type="number" name="DBMS" id="DBMS" required>
+                <span>Database managment</span>
+            </div>
+            <div class="input-box">
+                <input type="number" name="MATH" id="MATH" required>
+                <span>Mathematics</span>
+            </div>
+            <div class="input-box">
+                <input type="number" name="AP" id="AP" required>
+                <span>Aptitude</span>
+            </div>
+
+            <div class="input-box">
+                <input type="number" name="CS" id="CS" required>
+                <span>Communication Skills</span>
+            </div>
+            <div class="input-box">
+                <input type="number" name="HACK" id="HACK" required>
+                <span>Hackathons</span>
+            </div>
+            
+        </div>
+        <div class="container-2">
+            <div class="ps-radio">
+                <p class="">Select Your Point for Problem Solving : </p>
+                <div class = "PS">
+                    <input type="radio" id="1" name="Problem-Solving" value="1">
+                    <label for="Problem-Solving">1</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="2" name="Problem-Solving" value="2">
+                    <label for="Problem-Solving">2</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="3" name="Problem-Solving" value="3">
+                    <label for="Problem-Solving">3</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="4" name="Problem-Solving" value="4">
+                    <label for="Problem-Solving">4</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="5" name="Problem-Solving" value="5">
+                    <label for="Problem-Solving">5</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="6" name="Problem-Solving" value="6">
+                    <label for="Problem-Solving">6</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="7" name="Problem-Solving" value="7">
+                    <label for="Problem-Solving">7</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="8" name="Problem-Solving" value="8">
+                    <label for="Problem-Solving">8</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="9" name="Problem-Solving" value="9">
+                    <label for="Problem-Solving">9</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="10" name="Problem-Solving" value="10">
+                    <label for="Problem-Solving">10</label>
+                </div>
+                    
+            </div>
+
+            <div class="ps-radio">
+                <p class="">Select Your Point for Creativity : <span class="pointer"></span>  </p>
+                <div class = "PS">
+                    <input type="radio" id="1" name="creativity" value="1">
+                    <label for="creativity">1</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="2" name="creativity" value="2">
+                    <label for="creativity">2</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="3" name="creativity" value="3">
+                    <label for="creativity">3</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="4" name="creativity" value="4">
+                    <label for="creativity">4</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="5" name="creativity" value="5">
+                    <label for="creativity">5</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="6" name="creativity" value="6">
+                    <label for="creativity">6</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="7" name="creativity" value="7">
+                    <label for="creativity">7</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="8" name="creativity" value="8">
+                    <label for="creativity">8</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="9" name="creativity" value="9">
+                    <label for="creativity">9</label>
+                </div>
+                <div class = "PS">
+                    <input type="radio" id="10" name="creativity" value="10">
+                    <label for="creativity">10</label>
+                </div>
+                    
+            </div>
+
+        </div>
+        <div class="container-3">
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="DL" id="DL">
+                    <label for="DL">
+                        <img src="{{ url_for('static', filename='Img/deep learning.png')}}" alt="Language Logo"/> AI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Ansible" id="Ansible" value="Ansible">
+                    <label for="Ansible">
+                        <img src="{{ url_for('static', filename='Img/Ansible.png') }}" alt="Language Logo"/> Ansible&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Angular" id="Angular">
+                    <label for="Angular">
+                        <img src="{{ url_for('static', filename='Img/Angular.png')}}" alt="Language Logo"/> Angular&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Bash" id="Bash">
+                    <label for="Bash">
+                        <img src="{{ url_for('static', filename='Img/bash.png') }}" alt="Language Logo"/> Bash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="C" id="C">
+                    <label for="C">
+                        <img src="{{ url_for('static', filename='Img/C++.png')}}" alt="Language Logo"/> C/C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Cisco" id="Cisco">
+                    <label for="Cisco">
+                        <img src="{{ url_for('static', filename='Img/cisco.png')}}" alt="Language Logo"/> Cisco&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Figma" id="Figma">
+                    <label for="Figma">
+                        <img src="{{ url_for('static', filename='Img/figma.png')}}" alt="Language Logo"/> Figma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="github" id="github">
+                    <label for="github">
+                        <img src="{{ url_for('static', filename='Img/github.png')}}" alt="Language Logo"/> Git Hub&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="HTML" id="HTML">
+                    <label for="HTML">
+                        <img src="{{ url_for('static', filename='Img/html.png')}}" alt="Language Logo"/>HTML-CSS
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Java" id="Java">
+                    <label for="Java">
+                        <img src="{{ url_for('static', filename='Img/java.png')}}" alt="Language Logo"/> Java&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Javascript" id="Javascript">
+                    <label for="Javascript">
+                        <img src="{{ url_for('static', filename='Img/javascript.png')}}" alt="Language Logo"/>Javascript
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Linux" id="Linux">
+                    <label for="Linux">
+                        <img src="{{ url_for('static', filename='Img/linux.png')}}" alt="Language Logo"/> Linux&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="ML" id="ML">
+                    <label for="ML">
+                        <img src="{{ url_for('static', filename='Img/machine learning.png')}}" alt="Language Logo"/> ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="SQL" id="SQL">
+                    <label for="SQL">
+                        <img src="{{ url_for('static', filename='Img/mysql.png')}}" alt="Language Logo"/> SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Node" id="Node">
+                    <label for="Node">
+                        <img src="{{ url_for('static', filename='Img/node js.png')}}" alt="Language Logo"/> Node Js&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Oracle" id="Oracle">
+                    <label for="Oracle">
+                        <img src="{{ url_for('static', filename='Img/oracle.png')}}" alt="Language Logo"/> Oracle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Python" id="Python">
+                    <label for="Python">
+                        <img src="{{ url_for('static', filename='Img/python.png')}}" alt="Language Logo"/> Python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="PS" id="PS">
+                    <label for="PS">
+                        <img src="{{ url_for('static', filename='Img/photoshop.png')}}" alt="Language Logo"/>&nbsp;&nbsp
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Pytorch" id="Pytorch">
+                    <label for="Pytorch">
+                        <img src="{{ url_for('static', filename='Img/pytorch.png')}}" alt="Language Logo"/> Pytorch&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="React" id="React">
+                    <label for="React">
+                        <img src="{{ url_for('static', filename='Img/react.png')}}" alt="Language Logo"/> React&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="R" id="R">
+                    <label for="R">
+                        <img src="{{ url_for('static', filename='Img/R.png')}}" alt="Language Logo"/> R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="cb" id="cb-23">
+                    <label for="cb-23">
+                        <img src="{{ url_for('static', filename='Img/tensor flow.png')}}" alt="Language Logo"/> Tensorflow
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="Wire" id="Wire">
+                    <label for="Wire">
+                        <img src="{{ url_for('static', filename='Img/wireshark.png')}}" alt="Language Logo"/> Wire shark
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" name="cb" id="cb-24">
+                    <label for="cb-24">
+                        <img src="{{ url_for('static', filename='Img/Ansible.png')}}" alt="Language Logo"/> Check this
+                    </label>
+                </div>
+                <!-- Two more checkbox elements similar to the above structure -->
+            </div>
+        </div>
+
+        <div class="pred">
+            <h1>Prediction: </h1>
+            <span id = "predictions">""</span>
+        </div>
+        
+
+        <div class="button">
+            <button class = "btn" id="submit">submit</button>
+        </div>
+        
+    </section>
+
+
+    <footer class="black foot">
+        <div class="footer" id = "footer">
+            <div class="info">
+                <div class="logo"><img src="{{ url_for('static', filename='Img/logo 1.png')}}" alt=""></div>
+                <div class="footer-content">
+                    <div class="fc-1 fc">
+                        <div><img src="{{ url_for('static', filename='Img/round-place-24px.png')}}" alt=""></div>
+                        <p>Chandigarh University, 271003, Kharar, Punjab</p>
+                    </div>
+                    <div class="fc-2 fc">
+                        <div class="phone-1 phone">
+                            <div><img src="{{ url_for('static', filename='Img/round-phone-24px.png')}}" alt=""></div>
+                            <p>+91 8090996733</p>
+                        </div>
+                        <div class="phone-2 phone">
+                            <div><img src="{{ url_for('static', filename='Img/round-local-printshop-24px.png')}}" style="margin-right: 0.4rem;" alt=""></div>
+                            <p>Marg.Darshan.AI@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="fc-3 fc">
+                        <p>Social media</p>
+                        <div><a href="https://www.facebook.com/yuvjeet.arora?mibextid=PzaGJu" target="_blank"><img src="{{ url_for('static', filename='Img/facebook black.1.png')}}" alt=""></a></div>
+                        <div><a href="#"><img src="{{ url_for('static', filename='Img/twitter black.1.png')}}" alt=""></a></div>
+                        <div><a href="https://www.linkedin.com/in/rahul-dey-3a1461226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="{{ url_for('static', filename='Img/linkedin black.1.png')}}" alt=""></a></div>
+                        <div><a href="https://youtube.com/@MargDarshan-ps4yl?si=qnfiX2dXfX29N1SX" target="_blank"><img src="{{ url_for('static', filename='Img/youtube color.1.png')}}" alt=""></a></div>
+                        <div><a href="https://instagram.com/chamoli_abhi?igshid=MTNiYzNiMzkwZA==" target="_blank"><img src="{{ url_for('static', filename='Img/instagram black.1.png')}}" alt=""></a></div>
+                        <div><a href="#"><img src="{{ url_for('static', filename='Img/googleplus black.1.png')}}" alt=""></a></div>
+                        <div><a href="#"><img src="{{ url_for('static', filename='Img/pinterest color.1.png')}}" alt=""></a></div>
+                        <div><a href="#"><img src="{{ url_for('static', filename='Img/rss black.1.png')}}" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ender">
+                <div class="footer-links">
+                    <a href="#"><p>ABOUT US</p></a>
+                    <a href="#"><p>CONTACT US</p></a>
+                    <a href="#help" onclick="smoothScroll('#help')"><p>HELP</p></a>
+                    <a href="#"><p>PRIVACY POLICY</p></a>
+                    <a href="#"><p>DISCLAIMER</p></a>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2023 • Marg Darshan Inc.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

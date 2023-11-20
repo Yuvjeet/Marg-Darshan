@@ -1,0 +1,885 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    /* margin: 5px; */
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Bree Serif', serif !important;
+    box-sizing: border-box;
+    --FooterBackground: #23262C;
+    --FooterText: #FFF;
+    /* overflow: scroll;
+    overflow-x: hidden; */
+}
+
+body{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;  
+}
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************utiluity classes*********************************************************************/
+.blue{
+    background: #D5EAFD !important;
+}
+
+.black{
+    background: #23262C !important;
+}
+
+.tblack{
+    color: #23262C !important;
+}
+
+.font{
+    font-family: 'Bree Serif', serif !important;
+}
+
+/*********************************************utiluity classes end*********************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************Navigation bar***********************************************************************/
+
+
+div.nav-bar{
+    display: flex;
+    width: 100%;
+    height: 17vh;
+    max-height: 17.7rem;
+    box-sizing: border-box;
+    /* border: 2px solid yellow; */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-bar ul{
+    display: inline-block;
+    /* border: 2px solid red; */
+    padding: 0.2em;
+    margin-right: 14.5em;
+    box-sizing: border-box;
+}
+
+li.nav-item{
+    display: inline-block;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    padding: 0.2em;
+    margin-left: 5em;
+}
+
+li.nav-item a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    /* border: 2px solid blue; */
+    padding: 0.2em;
+    cursor: pointer;
+    position: relative;
+}
+
+li.nav-item a:hover{
+    /* border-bottom: 0.1rem solid black; */
+    transform: scale(1.01);
+    transition-duration: 1;
+    transition-timing-function: ease-in-out;
+}
+
+li.nav-item a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+
+li.nav-item a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+
+/*********************************************Navigation bar end **********************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************Banner Section***********************************************************************/
+.banner{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    /* border: 2px solid pink; */
+}
+
+section div.holder{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 85%;
+    box-sizing: border-box;
+    margin-right: 14.5em;
+    display: flex;
+}
+
+.banner div.holder div.right{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 35%;
+    margin-left: 1em;
+    margin-top: 1.8em;
+    /* align-self: flex-end; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-end;
+}
+
+.banner div.holder div.left{
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 65%;
+    /* margin: 2px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner div.holder div.left h1{
+    font-size: 4vw;
+}
+
+.banner div.holder div.left h1.slogan{
+    margin-top: 1.5em;
+}
+
+.banner div.holder div.left h1.name {
+    white-space: nowrap; 
+    overflow: hidden;    
+    animation: write-reverse 8s steps(40) infinite;
+    animation-delay: 3s;
+    border-right: 2px solid transparent; 
+}
+
+@keyframes write-reverse {
+    0%, 100% {
+      width: 0;
+      border-right: 0.2vw solid transparent; 
+    }
+    10%, 90% {
+      border-right: 0.2vw solid #000; 
+    }
+    45% {
+      width: 28vw; 
+      border-right: 0.2vw solid #000;
+    }
+    55% {
+      width: 28vw; 
+      border-right: 0.2vw solid transparent; 
+    }
+    100% {
+      transform: translateX(0);
+      animation-direction: alternate;
+      animation-timing-function: steps(200);
+      animation-delay: 1s;
+    }
+  }
+
+
+
+
+.banner div.holder div.left .button {
+    margin-top: 2em;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #23262C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.banner div.holder div.left .button:hover {
+    transform: scale(1.05);
+    /* background-color: #1e87d3;  */
+}
+
+.banner div.holder div.left .button a{
+    font-size: 1.1vw;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    /* padding: 1em; */
+}
+
+.banner div.holder div.right img{
+    mix-blend-mode: multiply;
+    height: 100%;
+    image-rendering: crisp-edges;
+}
+
+
+/*********************************************Banner Section end***********************************************************************/
+
+
+
+
+
+
+
+
+div.clear{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+/*********************************************Seprator*****************************************************************************/
+
+section.seprator{
+    /* border: 2px solid blue; */
+    border-top: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;
+    width: 100%;
+    height: 50%;
+    margin-top: 23vh;
+    margin-bottom: 5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.seprator div.divider{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    padding: 1em;
+    /* margin: 1em; */
+}
+
+.seprator div.divider .job-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+}
+.seprator div.divider .job-profile h1{
+    font-size: 2rem;
+}
+
+.SE{
+    margin-left: 2em;
+}
+
+/*******************************************************Seprator end*******************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************Instructions******************************************************************/
+section.manual{
+    width: 100%;
+    display: flex;
+    height: 80vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+section.manual h1.mid{
+    font-size:5rem;
+    margin-bottom: 1.5em;
+}
+
+section.manual div.instruction{
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+}
+
+
+section.manual div.instruction div.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.manual div.instruction div.input div{
+    border-radius: 50%;
+    background-color: #D5EAFD;
+    box-shadow: #23262C 1px 2px 3px;
+    width: fit-content;
+}
+
+
+section.manual div.instruction div.input div img {
+    width: 25rem;
+    transform: translateY(-2vh);
+    transition: transform 0.7s ease-in-out;
+}
+
+section.manual div.instruction div.input div img.rimg:hover {
+    transform: scale(1.05);
+}
+
+section.manual div.instruction div.input div img:hover {
+    transform: scale(1.2);
+}
+
+
+section.manual div.instruction div.input h1{
+    font-size: 3rem;
+}
+section.manual div.instruction div.input p{
+    font-size: 2rem;
+}
+
+/********************************************************Instructions Ends*************************************************************/
+
+/********************************************************Form**************************************************************************/
+section.main{
+    width: 95%;
+    display: flex;
+    height: 65vh;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    margin-bottom: 10em;
+    /* padding: 1em; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #23262C;
+    border-radius: 1rem;
+    margin-left: 4em;
+    margin-bottom: 10rem;
+}
+
+section.main div.container{
+    width: 100%;
+    height: 70%;
+    /* background-color: ?#23262C; */
+    /* padding: 1em; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /* margin-top: 5rem; */
+    /* border: 2px solid white; */
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+section.main div.container .input-box {
+    position: relative;
+    width: 30rem;
+    margin-bottom: 2rem; 
+    height: 33.3%;
+}
+
+section.main div.container .input-box input {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    outline: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #23262C;
+}
+
+section.main div.container .input-box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    pointer-events: none;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transform: translateX(0) translateY();
+}
+
+section.main div.container .input-box input:focus ~ span,
+section.main div.container .input-box input:valid ~ span {
+    transform: translateX(10px) translateY(-6px);
+    font-size: 1rem;
+    padding: 0 1em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    letter-spacing: 0.2em;
+    color: #23262C;
+    background: white;
+}
+
+
+section.main div.container .input-box input:focus,
+section.main div.container .input-box input:valid {
+    border: 3px solid #D5EAFD;
+}
+
+section.main div.button {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 10%;
+    /* border: 2px solid palevioletred; */
+
+}
+
+
+section.main div.container-2{
+    width: 100%;
+    height: 70%;
+    /* background-color: ?#23262C; */
+    /* padding: 1em; */
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: center;
+    align-items: flex-start; */
+    flex-direction: column;
+    /* border-radius: 1rem; */
+    /* flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center; */
+    display: none;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+section.main div.container-2 p{
+    color: white;
+    font-size: 2rem;
+}
+
+section.main div.container-2 div.ps-radio{
+    /* border: 2px solid white; */
+    display: flex;
+    width: 90%;
+    height: 50%;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10rem;
+}
+section.main div.container-2 div.ps-radio label{
+    color: white;
+    font-size: 1.6rem;
+}
+
+section.main div.container-2 div.ps-radio .pointer{
+    margin-left: 5rem;
+}
+
+section.main div.container-2 div.ps-radio div.PS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    /* border: 2px solid pink; */
+    height: 5rem;
+    /* margin-top: 1rem; */
+}
+
+section.main div.container-2 div.ps-radio div.PS  input[type='radio']{
+    transform: scale(1.5);
+    margin-top: 2.5rem;
+}
+
+
+.container-3 {
+    width: 100%;
+    height: 70%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    padding-right: 1em;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.wrapper {
+    width: 15rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: white;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.checkbox-wrapper-47 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-wrapper-47 input[type="checkbox"] {
+    padding: 0rem;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+    outline: #23262C;
+    margin-left: 0.5rem;
+}
+
+.checkbox-wrapper-47 label {
+    position: relative;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 2;
+    cursor: pointer;
+    display: flex;
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.checkbox-wrapper-47 label img {
+    margin-right: 3px; 
+    height: 2.5rem;
+}
+
+.checkbox-wrapper-47 label:before {
+    box-sizing: border-box;
+    content: " ";
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid #9098A9;
+    border-radius: 6px;
+    z-index: -1;
+    transition: transform 0.5s ease-in-out; /* Transition on transform */
+    transform-origin: center; /* Set the transform origin */
+    transform: scale(0.8);
+}
+
+.checkbox-wrapper-47 input[type=checkbox]:checked + label {
+    color: #0f5229;
+    /* transform: scale(1.32); */
+    /* display: inline-block; */
+    translate: -0.8rem;
+    margin: 0;
+    transform: scale(1.3); /* Adjust the scale factor as needed to cover the wrapper */
+    margin: 0;
+}
+
+.checkbox-wrapper-47 input[type=checkbox]:checked + label:before {
+    /* top: 0;
+    width: 100%;
+    height: 2em;
+    background: #b7e6c9;
+    border-color: #2cbc63;
+    transform: scale(1); */
+    top: -0.3em; /* Adjust positioning */
+    width: calc(100%); /* Adjust width to cover the entire wrapper */
+    height: calc(100% + 1rem); /* Adjust height to cover the entire wrapper */
+    background: #b7e6c9;
+    border-color: #2cbc63;
+    transform: scale(1.05); /*
+}
+
+.checkbox-wrapper-47 input[type="checkbox"]:hover + label:before {
+    transform: scale(1); /* Scale on hover */
+}
+
+.checkbox-wrapper-47 label,
+.checkbox-wrapper-47 label::before {
+    transition: 0.25s all ease;
+}
+
+
+.pred {
+    width: 100%;
+    height: 70%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /* border: 2px solid red; */
+}
+
+.pred h1{
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: white !important; 
+    display: inline-block;
+    letter-spacing: 0.3rem;
+    margin-right: 1rem;
+    word-spacing: 1rem;
+}
+
+.pred #predictions{
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: white !important; 
+    letter-spacing: 0.2rem;
+    word-spacing: 0.7rem;
+    /* display: inline-block; */
+    text-transform: capitalize;
+}
+
+
+
+section.main div.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+section.main div.button .btn {
+    background-color: white;
+    color: #23262C;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+section.main div.button .btn:hover {
+    background-color: #D5EAFD;
+    transform: scale(1.05);
+}
+
+
+
+
+/*********************************************************Footer**********************************************************************/
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    height: 50vh;
+    color: var(--White, #FFF);
+    /* font-family: Assistant; */
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* overflow: hidden; */
+}
+
+footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer p{
+    display: inline-block;
+    /* position: relative; */
+}
+
+footer div.footer{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15rem;
+}
+
+
+footer div.footer div.info{
+    display: flex;
+    /* border: 2px solid palevioletred; */
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* align-self: stretch; */
+    /* margin-bottom: 6em; */
+}
+
+
+
+
+/* Inside info */
+footer div.footer div.info div.logo{
+    display: flex;
+}
+footer div.footer div.info div.logo img{
+    height: 10rem;
+}
+
+footer div.footer div.info div.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div.footer div.info div.footer-content div.fc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div.footer div.info div.footer-content div.fc div{
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+footer div.footer div.info div.footer-content div.fc-3{
+    margin-top: 1rem;
+    /* margin-right: 0.5rem; */
+}
+footer div.footer div.info div.footer-content div.fc-3 a{
+    margin-right: 1rem;
+}
+footer div.footer div.info div.footer-content div.fc-3 p{
+    margin-right: 1rem;
+}
+
+footer div.footer div.info div.footer-content div.fc div.phone{
+    display: flex;
+    /* border: 2px solid darkgrey; */
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+/* Info end */
+footer div.footer div.ender{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* align-self: stretch; */
+    /* border: 2px solid blue; */
+    height: 30%;
+    width: 100%;
+}
+
+footer div.footer div.ender div.footer-links{
+    display: flex;
+    width: 70%;
+    /* border: 2px solid whitesmoke; */
+    /* justify-content: space-around; */
+    font-size: 1rem;
+}
+footer div.footer div.ender div.footer-links a{
+    margin-left: 2rem;
+    margin-top: 3rem;
+    font-weight: 300;
+}
+
+footer div.footer div.ender div.copyright{
+    width: 30%;
+    /* border: 2px solid darkcyan; */
+}
+
+footer div.footer div.ender div.copyright p{
+    margin-left: 8em;
+    margin-top: 3rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/*********************************************************Footer End*******************************************************************/
